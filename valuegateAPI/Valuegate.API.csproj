@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\valuegate.Application\Valuegate.Application.csproj" />
+    <ProjectReference Include="..\valuegate.Common\Valuegate.Common.csproj" />
+    <ProjectReference Include="..\valuegate.Infrastructure\Valuegate.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
