@@ -1,12 +1,23 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Valuegate.Common.Interfaces;
 
 namespace Valuegate.Infrastructure.Logging
 {
-    internal class LoggerManager
+    public class LoggerManager : ILoggerManager
     {
+        public void LogError(string logEvent, object logData)
+        {
+            Log.Error($"Error :: {DateTime.UtcNow}, LogEvent : {logEvent}, LogData : {logData}");
+        }
+
+        public void LogInfo(string logEvent, object logData)
+        {
+            Log.Information($"INFO :: {DateTime.UtcNow}, LogEvent : {logEvent}, LogData : {logData}");
+        }
     }
 }
