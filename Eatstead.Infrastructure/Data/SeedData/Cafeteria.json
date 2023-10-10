@@ -1,0 +1,101 @@
+[
+  {
+    "BusinessName": "GSK",
+    "HallName": "Sultan Bello Hall",
+    "Review": 4.5,
+    "Rating": 4.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "Debbie Kichen",
+    "HallName": "Sultan Bello Hall",
+    "Review": 2.5,
+    "Rating": 3.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "Tedder Cafe",
+    "HallName": "Lord Tedder Hall",
+    "Review": 3.5,
+    "Rating": 4.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "Zik Cafe",
+    "HallName": "Zik Hall",
+    "Review": 4.5,
+    "Rating": 4.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "Awo Cafe",
+    "HallName": "Awolowo Hall",
+    "Review": 3.5,
+    "Rating": 3.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "Queens Cafe",
+    "HallName": "Queens Hall",
+    "Review": 4.5,
+    "Rating": 4.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "Indy Cafe",
+    "HallName": "Indy Hall",
+    "Review": 3.5,
+    "Rating": 4.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "Mellaby Cafe",
+    "HallName": "Sultan Bello",
+    "Review": 3.5,
+    "Rating": 3.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  },
+  {
+    "BusinessName": "India Cafe",
+    "HallName": "India Hall",
+    "Review": 4.5,
+    "Rating": 3.5,
+    "ProductPicture": "picture.img",
+    "Address": "Lorem ipsum dolor sit amet",
+    "IsAvailable": true,
+    "OpeningTime": "2023-09-23 16:33:54.281404+01",
+    "ClosingTime": "2023-09-23 16:33:54.281404+01"
+  }
+]
