@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\valuegate.Application\Valuegate.Application.csproj" />
+    <ProjectReference Include="..\Valuegate.Application\Eatstead.Application.csproj" />
   </ItemGroup>
 
 </Project>

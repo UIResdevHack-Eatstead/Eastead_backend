@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\valuegate.Common\Valuegate.Common.csproj" />
+    <ProjectReference Include="..\Valuegate.Common\Eatstead.Common.csproj" />
   </ItemGroup>
 
 </Project>
