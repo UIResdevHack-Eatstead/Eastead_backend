@@ -7,7 +7,7 @@ using Valuegate.Common.Types;
 
 namespace Eatstead.Domain.Entities
 {
-    public class Cafeteria : BaseEntity<string>
+    public class Cafeteria : BaseEntity<int>
     {
         public string BusinessName { get; set; }
         public string HallName { get; set; }
@@ -18,6 +18,8 @@ namespace Eatstead.Domain.Entities
         public DateTime ClosingTime { get; set;}
         public string Address { get; set; }
         public bool IsAvailable { get; set; }
-        public ICollection<Food> Foods { get; set; }
+        public ICollection<Menu> Foods { get; set; }
+
+        public ApplicationUser User { get; set; }
     }
 }
