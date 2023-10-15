@@ -8,5 +8,6 @@ namespace Valuegate.Common.Enums
 {
     public enum RoleType
     {
+
     }
 }

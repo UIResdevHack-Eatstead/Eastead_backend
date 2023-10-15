@@ -12,6 +12,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Valuegate.Application.Services.Abstractions;
+using Valuegate.Infrastructure.Repositories;
 
 namespace Valuegate.Application
 {
@@ -26,6 +27,7 @@ namespace Valuegate.Application
 
             services.AddSingleton(config);
             services.AddScoped<IMapper, ServiceMapper>();
+            services.AddScoped<UnitOfWork>();
 
             return services;
         }

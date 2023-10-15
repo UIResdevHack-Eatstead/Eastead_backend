@@ -1,5 +1,7 @@
 ﻿using Eatstead.API.Extensions;
+using Eatstead.Application.Commands;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 using System.Text.Json;
 using Valuegate.Infrastructure.Data;
 
@@ -14,6 +16,8 @@ namespace Valuegate.API.Extensions
             {
                 Options.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(RegisterUserCommand).GetTypeInfo().Assembly));
 
             services.AddIdentityServices(_config);
 
