@@ -1,13 +1,17 @@
-﻿using Mapster;
+﻿using Eatstead.Application.Services.Abstractions;
+using Eatstead.Application.Services.Implementations;
+using Mapster;
 using MapsterMapper;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Valuegate.Application.Services.Abstractions;
 
 namespace Valuegate.Application
 {
@@ -17,6 +21,8 @@ namespace Valuegate.Application
         {
             var config = TypeAdapterConfig.GlobalSettings;
             config.Scan(Assembly.GetExecutingAssembly());
+            services.AddScoped<IMenuService, MenuService>();
+            services.AddScoped<IRestaurantService, RestaurantService>();
 
             services.AddSingleton(config);
             services.AddScoped<IMapper, ServiceMapper>();

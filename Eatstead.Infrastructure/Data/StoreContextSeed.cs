@@ -1,4 +1,6 @@
 ﻿using Eatstead.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -7,6 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Valuegate.Domain;
 using Valuegate.Infrastructure.Data;
 
 namespace Eatstead.Infrastructure.Data
@@ -61,7 +64,7 @@ namespace Eatstead.Infrastructure.Data
                         context.Cafeterias.Add(item);
                     }
 
-                  
+
 
                     await context.SaveChangesAsync();
 
@@ -79,6 +82,26 @@ namespace Eatstead.Infrastructure.Data
             }
         }
 
+
+
+        public static async Task SeedIdentityRoles(ApplicationDbContext context, RoleManager<ApplicationRole> roleManager)
+        {
+            var roles = new string[] { "Customer", "Vendor" };
+            foreach (var role in roles)
+            {
+                var roleStore = new RoleStore<ApplicationRole>(context);
+
+                var roleExist = await roleManager.RoleExistsAsync(role);
+                if (!roleExist)
+                {
+                    var roleToAdd = new ApplicationRole(role)
+                    {
+                        NormalizedName = role.ToUpper()
+                    };
+                    await roleManager.CreateAsync(roleToAdd);
+                }
+            }
         }
-    
+
+    }
 }

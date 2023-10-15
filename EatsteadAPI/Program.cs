@@ -55,6 +55,7 @@ try
     var roleManager = services.GetRequiredService<RoleManager<ApplicationRole>>();
     await context.Database.MigrateAsync();
     await StoreContextSeed.SeedAsync(context, loggerFactory);
+    await StoreContextSeed.SeedIdentityRoles(context, roleManager);
 }
 catch (Exception ex)
 {

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Valuegate.Application.Services.Abstractions
+namespace Eatstead.Application.Services.Abstractions
 {
-    internal class ISampleService
+    public class IRestaurantService
     {
+
     }
 }

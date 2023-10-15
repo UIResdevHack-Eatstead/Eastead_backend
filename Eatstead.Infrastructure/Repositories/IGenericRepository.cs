@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Valuegate.Infrastructure.Repositories
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T, TKey> where T : class
     {
         Task<T> GetById(int id);
         IEnumerable<T> GetAll(bool eager);
