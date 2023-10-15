@@ -12,13 +12,13 @@ using Valuegate.Infrastructure.Repositories;
 
 namespace Eatstead.Application.Services.Implementations
 {
-    public class RestaurantService : IRestaurantService
+    public class CafeteriaService : ICafeteriaService
     {
         private readonly UnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public RestaurantService(UserManager<ApplicationUser> userManager, UnitOfWork unitOfWork, IMapper mapper)
+        public CafeteriaService(UserManager<ApplicationUser> userManager, UnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -46,7 +46,7 @@ namespace Eatstead.Application.Services.Implementations
             return mapper;
         }
 
-        public async Task<IEnumerable<CafeteriaDto>> GetCafeteria()
+        public async Task<IEnumerable<CafeteriaDto>> GetCafeterias()
         {
             var cafeteria = _unitOfWork.CafeteriaRepository.GetAll(true);
             var mapper = _mapper.Map<IEnumerable<CafeteriaDto>>(cafeteria);

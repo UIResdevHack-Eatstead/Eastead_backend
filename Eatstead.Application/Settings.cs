@@ -22,7 +22,7 @@ namespace Valuegate.Application
             var config = TypeAdapterConfig.GlobalSettings;
             config.Scan(Assembly.GetExecutingAssembly());
             services.AddScoped<IMenuService, MenuService>();
-            services.AddScoped<IRestaurantService, RestaurantService>();
+            services.AddScoped<ICafeteriaService, CafeteriaService>();
 
             services.AddSingleton(config);
             services.AddScoped<IMapper, ServiceMapper>();
