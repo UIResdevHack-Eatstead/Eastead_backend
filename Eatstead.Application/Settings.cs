@@ -29,6 +29,8 @@ namespace Valuegate.Application
             services.AddScoped<IMapper, ServiceMapper>();
             services.AddScoped<UnitOfWork>();
 
+            services.AddScoped<ITokenService, TokenService>();
+
             return services;
         }
     }

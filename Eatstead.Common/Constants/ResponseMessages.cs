@@ -22,6 +22,7 @@ namespace Valuegate.Common.Constants
         public const string ForgotPasswordException = "Check your Email, mail just sent!";
         public const string ResetPasswordException = "Your password has been saved!";
         public const string ConfirmPasswordException = "Password doesn't match its confirmation";
+        public const string LoginMessage = "Login successfully!";
 
     }
 }
