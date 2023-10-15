@@ -22,12 +22,22 @@ namespace Eatstead.Infrastructure.Data
                 if (!context.Menus.Any())
                 {
                     using var transaction = context.Database.BeginTransaction();
-                    var menusData = File.ReadAllText("../Infrastructure/Data/SeedData/Menu.json");
+                    var menusData = File.ReadAllText("../Eatstead.Infrastructure/Data/SeedData/Menu.json");
                     var menus = JsonSerializer.Deserialize<List<Menu>>(menusData);
 
                     foreach (var item in menus)
                     {
-                        context.Menus.Add(item);
+                        var menu = new Menu
+                        {
+                            Cafeteria = item.Cafeteria,
+                            CafeteriaId = item.CafeteriaId,
+                            Description = item.Description,
+                            Id = item.Id,
+                            Name = item.Name,
+                            PictureUrl = item.PictureUrl,
+                            Price = item.Price,
+                        };
+                        context.Menus.Add(menu);
                     }
 
                     ///   context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT ProductBrands ON");
@@ -43,7 +53,7 @@ namespace Eatstead.Infrastructure.Data
                 if (!context.Cafeterias.Any())
                 {
                     using var transaction = context.Database.BeginTransaction();
-                    var typesData = File.ReadAllText("../Infrastructure/Data/SeedData/Cafeteria.json");
+                    var typesData = File.ReadAllText("../Eatstead.Infrastructure/Data/SeedData/Cafeteria.json");
                     var types = JsonSerializer.Deserialize<List<Cafeteria>>(typesData);
 
                     foreach (var item in types)
@@ -51,7 +61,7 @@ namespace Eatstead.Infrastructure.Data
                         context.Cafeterias.Add(item);
                     }
 
-                    //    context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT ProductTypes ON");
+                  
 
                     await context.SaveChangesAsync();
 

@@ -22,6 +22,11 @@ namespace Valuegate.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Entity<Menu>()
+            .HasOne(m => m.Cafeteria)
+            .WithMany(c => c.Foods)
+            .HasForeignKey(m => m.CafeteriaId);
+
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 

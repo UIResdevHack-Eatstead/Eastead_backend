@@ -4,154 +4,154 @@
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Beans",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Rice",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 500,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Yam",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Amala",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 700,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Predator",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 350,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Maltina",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 400,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Spaggeti",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Fufu",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 300,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Eba",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Egusi with Ogufe",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 2000,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Ewedu with Punmon",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 500,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Ogunfe",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 1500,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Chicken",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 1200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Meat",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Bread",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 300,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Table water",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Sachet water",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 20,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "White Rice",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Ponmon",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 200,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "C-way",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 350,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   },
   {
     "Name": "Sosa",
     "Description": "Lorem ipsum dolor sit amet",
     "Price": 250,
     "PictureUrl": "picture.img",
-    "CafeteriaId": "1"
+    "CafeteriaId": 1
   }
 
 ]

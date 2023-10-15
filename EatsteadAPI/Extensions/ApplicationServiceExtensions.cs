@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Eatstead.API.Extensions;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using Valuegate.Infrastructure.Data;
 
@@ -11,8 +12,10 @@ namespace Valuegate.API.Extensions
 
             services.AddDbContext<ApplicationDbContext>(Options =>
             {
-                Options.UseNpgsql(_config.GetConnectionString("DefaultConnection"));
+                Options.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddIdentityServices(_config);
 
             services.AddCors(options =>
             {

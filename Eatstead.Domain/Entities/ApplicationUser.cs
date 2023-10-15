@@ -15,6 +15,6 @@ namespace Eatstead.Domain.Entities
         public DateTime? CreatedDate { get; set; }
         public DateTime? LastSeenDate { get; set; }
 
-        public Cafeteria Cafeteria { get; set; }
+        public virtual Cafeteria Cafeteria { get; set; }
     }
 }
