@@ -37,11 +37,11 @@ namespace Eatstead.Application.Commands
                     return APIResponse.GetFailureMessage(HttpStatusCode.BadRequest, null, ResponseMessages.NotFound);
                 }
 
-                if (!await _userManager.IsEmailConfirmedAsync(user))
+              /*  if (!await _userManager.IsEmailConfirmedAsync(user))
                 {
                     return APIResponse.GetFailureMessage(HttpStatusCode.BadRequest, null, ResponseMessages.EmailNotConfirmed);
                 }
-
+              */
                 var checkPassword = await _userManager.CheckPasswordAsync(user, request.Password);
 
                 if (!checkPassword)

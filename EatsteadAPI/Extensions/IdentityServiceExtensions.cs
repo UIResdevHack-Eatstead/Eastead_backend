@@ -16,7 +16,7 @@ namespace Eatstead.API.Extensions
             services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
-                options.User.RequireUniqueEmail = true;
+                options.User.RequireUniqueEmail = false;
                 options.User.AllowedUserNameCharacters = null;
                 options.Password.RequireDigit = false;
                 options.Password.RequiredLength = 6;

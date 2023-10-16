@@ -16,6 +16,6 @@ namespace Eatstead.Domain.Entities
         public string PictureUrl { get; set; }
         [ForeignKey("Cafeteria")]
         public int CafeteriaId { get; set; }
-        public virtual Cafeteria Cafeteria { get; set; }
+        public Cafeteria Cafeteria { get; set; }
     }
 }

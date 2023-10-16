@@ -9,6 +9,7 @@ namespace Eatstead.Domain.Entities
 {
     public class Cafeteria : BaseEntity<int>
     {
+        public string UserId { get; set; }
         public string BusinessName { get; set; }
         public string HallName { get; set; }
         public string ProductPicture { get; set; }
@@ -18,8 +19,7 @@ namespace Eatstead.Domain.Entities
         public DateTime ClosingTime { get; set;}
         public string Address { get; set; }
         public bool IsAvailable { get; set; }
-        public string UserId { get; set; }
-        public ICollection<Menu> Foods { get; set; }
+        public ICollection<Menu>? Menus { get; set; }
 
         public virtual ApplicationUser User { get; set; }
     }

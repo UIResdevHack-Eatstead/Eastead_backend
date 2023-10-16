@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Valuegate.Domain;
+using Microsoft.Extensions.Hosting;
 
 namespace Valuegate.Infrastructure.Data
 {
@@ -24,8 +25,14 @@ namespace Valuegate.Infrastructure.Data
             base.OnModelCreating(builder);
             builder.Entity<Menu>()
             .HasOne(m => m.Cafeteria)
-            .WithMany(c => c.Foods)
+            .WithMany(c => c.Menus)
             .HasForeignKey(m => m.CafeteriaId);
+
+            builder.Entity<Cafeteria>()
+                .HasMany(r => r.Menus)
+                .WithOne(h => h.Cafeteria)
+                .HasForeignKey(h => h.CafeteriaId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
